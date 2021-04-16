@@ -26,6 +26,7 @@ app.put('/lembretes', async (req, res) => {
     res.status(201).send(lembretes[contador]);
 })
 
+//adicionar a ambos microsservicos de lembretes e observações
 app.post("/eventos", (req, res) => {
     console.log(req.body);
     res.status(200).send({ msg: "ok"});
